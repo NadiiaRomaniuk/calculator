@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="design/calculator.css">
+    <link rel="stylesheet" href="design/main.css">
+</head>
+<body>
+    <div id="total">
+        <article id="user_features">
+            <button id="change_calculator_colour_button">Change color</button>
+            <input type="color" id="change_calculator_colour_input">
+        </article>
+
+        <div id="calculator">
+            <div id="calculator_display_div">
+                <p id="calculator_display_par"></p>
+            </div>
+            
+            <div id="calculator_buttons_div"></div>
+        </div>
+
+        <div id="plus_features">
+            <div id="factorial_div">
+                <button id="is_factorial_button" class="show is">Is factorial?</button>
+                <button id="show_factorial_memb_button" class="show">Display member</button>
+                <input type="number" id="memb_number_factorial_input" class="inp">
+            </div>
+
+            <div id="fibonacci_div">
+                <button id="is_fibo_button" class="show is">Is fibonacci?</button>
+                <button id="show_fibo_memb_button" class="show">Display member</button>
+                <input type="number" id="memb_number_fibo_input" class="inp">
+            </div>
+        </div>
+    </div>
+
+    <script src="code/calculator.js"></script>
+    <script src="code/plus_features.js"></script>
+    <script  src="code/user_features.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.4.4/math.min.js"></script>
+
+</body>
+</html>

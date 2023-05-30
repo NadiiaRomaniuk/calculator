@@ -1,0 +1,75 @@
+#calculator {
+    width: fit-content;
+    margin-top: 3svh;
+    margin-bottom: 5svh;
+    background-color: black;
+    border-radius: 20px;
+}
+
+#calculator_display_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+#calculator_display_par{
+    border-radius: 20px;
+
+    padding: 10px;
+    width: 320px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 45px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(235,168,205,1) 0%, rgba(164,132,156,1) 58%); 
+}
+
+
+
+
+#calculator_buttons_div {
+    width: 340px;
+    height: 425px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 17px;
+    padding: 20px;
+}
+.calculator_buttons {
+    border: solid black;
+    border-radius: 20px;
+    font-weight: 900;
+    font-size: 25px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(235,168,205,1) 0%, rgba(164,132,156,1) 58%); 
+    color: rgb(0, 0, 0);
+}
+
+
+
+#id1{
+    font-size: 20px;
+}
+
+
+
+@media screen and (max-width: 400px) {
+
+    #calculator_display_par{
+        width: 260px;
+    }
+
+    #calculator_buttons_div {
+        width: 280px;
+        height: 350px;
+        gap: 5px;
+    }
+
+}
